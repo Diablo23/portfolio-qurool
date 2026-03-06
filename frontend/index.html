@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qurool's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <canvas id="pixelRain"></canvas>
+
+    <!-- ═══════════════ INTRO — ENTER SCREEN ═══════════════ -->
+    <div id="intro" class="intro active">
+        <div class="enter-wrap">
+            <img src="../assets/animation.gif" alt="" class="enter-gif">
+            <div class="enter-box">
+                <span class="enter-text">enter</span>
+            </div>
+            <p class="enter-hint">press enter to continue<span class="blink-cursor">_</span></p>
+        </div>
+    </div>
+
+    <canvas id="burstCanvas"></canvas>
+
+    <!-- ═══════════════ PORTFOLIO ═══════════════ -->
+    <div id="portfolio" class="portfolio">
+
+        <nav id="sidenav" class="sidenav">
+            <button class="nav-link active" data-s="1"><span class="nav-label">[ stats ]</span><span class="nav-pip">■</span></button>
+            <button class="nav-link" data-s="2"><span class="nav-label">[ lead positions ]</span><span class="nav-pip">□</span></button>
+            <button class="nav-link" data-s="3"><span class="nav-label">[ contributed to ]</span><span class="nav-pip">□</span></button>
+            <button class="nav-link" data-s="4"><span class="nav-label">[ main skills ]</span><span class="nav-pip">□</span></button>
+            <button class="nav-link" data-s="5"><span class="nav-label">[ contact me ]</span><span class="nav-pip">□</span></button>
+            <button class="nav-link" data-s="6"><span class="nav-label">[ products ]</span><span class="nav-pip">□</span></button>
+        </nav>
+
+        <div id="scroller" class="scroller">
+
+            <!-- 1 — stats -->
+            <section class="sec" id="sec1" data-idx="1">
+                <div class="sec-inner">
+                    <pre class="ascii-header fade-row">┌──────────────────────────────────┐
+│  SYSTEM STATS  //  qurool       │
+└──────────────────────────────────┘</pre>
+                    <ul class="stats">
+                        <li class="stat-row fade-row"><span class="stat-bracket">[</span><span class="stat-num" data-to="6">0</span><span class="stat-plus">+</span><span class="stat-bracket">]</span><span class="stat-sep">::</span><span class="stat-txt">lead positions</span></li>
+                        <li class="stat-row fade-row"><span class="stat-bracket">[</span><span class="stat-num" data-to="17">0</span><span class="stat-plus">+</span><span class="stat-bracket">]</span><span class="stat-sep">::</span><span class="stat-txt">ambassador programs</span></li>
+                        <li class="stat-row fade-row"><span class="stat-bracket">[</span><span class="stat-num" data-to="64">0</span><span class="stat-plus">+</span><span class="stat-bracket">]</span><span class="stat-sep">::</span><span class="stat-txt">projects contributed to</span></li>
+                        <li class="stat-row fade-row"><span class="stat-bracket">[</span><span class="stat-num" data-to="112">0</span><span class="stat-plus">+</span><span class="stat-bracket">]</span><span class="stat-sep">::</span><span class="stat-txt">hosted events</span></li>
+                        <li class="stat-row fade-row"><span class="stat-bracket">[</span><span class="stat-num" data-to="1000">0</span><span class="stat-plus">+</span><span class="stat-bracket">]</span><span class="stat-sep">::</span><span class="stat-txt">content pieces</span></li>
+                        <li class="stat-row fade-row"><span class="stat-bracket">[</span><span class="stat-num" data-to="563971">0</span><span class="stat-plus">+</span><span class="stat-bracket">]</span><span class="stat-sep">::</span><span class="stat-txt">users managed</span></li>
+                    </ul>
+                    <pre class="ascii-footer fade-row">════════════════════════════════════</pre>
+                </div>
+            </section>
+
+            <!-- 2 — lead positions -->
+            <section class="sec" id="sec2" data-idx="2">
+                <div class="sec-inner">
+                    <pre class="ascii-header fade-row">┌──────────────────────────────────┐
+│  LEAD POSITIONS  //  registry   │
+└──────────────────────────────────┘</pre>
+                    <div class="cards-grid">
+                        <div class="card fade-row" data-detail="aethir">
+                            <div class="card-content">
+                                <h3 class="card-title">aethir</h3>
+                                <p class="card-line">├─ ua/pl community lead</p>
+                                <p class="card-line">├─ ambassador lead</p>
+                                <button class="card-details-btn">[ all details ]</button>
+                            </div>
+                        </div>
+                        <div class="card fade-row" data-detail="ionet">
+                            <div class="card-content">
+                                <h3 class="card-title">io.net</h3>
+                                <p class="card-line">├─ ua community lead</p>
+                                <p class="card-line">├─ ru community lead</p>
+                                <button class="card-details-btn">[ all details ]</button>
+                            </div>
+                        </div>
+                        <div class="card fade-row" data-detail="boinkers">
+                            <div class="card-content">
+                                <h3 class="card-title">boinkers</h3>
+                                <p class="card-line">├─ ru community lead</p>
+                                <button class="card-details-btn">[ all details ]</button>
+                            </div>
+                        </div>
+                        <div class="card fade-row" data-detail="liquid">
+                            <div class="card-content">
+                                <h3 class="card-title">liquid</h3>
+                                <p class="card-line">├─ educators guild lead</p>
+                                <button class="card-details-btn">[ all details ]</button>
+                            </div>
+                        </div>
+                        <div class="card fade-row" data-detail="soon">
+                            <div class="card-content">
+                                <h3 class="card-title">soon</h3>
+                                <p class="card-line">├─ ua community lead</p>
+                                <button class="card-details-btn">[ all details ]</button>
+                            </div>
+                        </div>
+                        <div class="card fade-row" data-detail="re">
+                            <div class="card-content">
+                                <h3 class="card-title">re</h3>
+                                <p class="card-line">├─ ua community lead</p>
+                                <button class="card-details-btn">[ all details ]</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3 — partners -->
+            <section class="sec" id="sec3" data-idx="3">
+                <div class="sec-inner">
+                    <pre class="ascii-header fade-row">┌──────────────────────────────────┐
+│  CONTRIBUTED/ING TO  //  community  │
+└──────────────────────────────────┘</pre>
+                    <div class="partners-grid" id="partnersGrid"></div>
+                </div>
+            </section>
+
+            <!-- 4 — main skills -->
+            <section class="sec" id="sec4" data-idx="4">
+                <div class="sec-inner">
+                    <pre class="ascii-header fade-row">┌──────────────────────────────────┐
+│  MAIN SKILLS  //  capabilities  │
+└──────────────────────────────────┘</pre>
+                    <ul class="skills-list">
+                        <li class="skill-row fade-row">├── building roles &amp; ambassadors programs</li>
+                        <li class="skill-row fade-row">├── ambs/mods teams management</li>
+                        <li class="skill-row fade-row">├── creation &amp; integration dc and tg bots</li>
+                        <li class="skill-row fade-row">├── website creation (analytics &amp; content &amp; community)</li>
+                        <li class="skill-row fade-row">└── building in notion (10+ mediakits, automated pages, team management)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 5 — contact me -->
+            <section class="sec" id="sec5" data-idx="5">
+                <div class="sec-inner">
+                    <pre class="ascii-header fade-row">┌──────────────────────────────────┐
+│  CONTACT ME  //  channels       │
+└──────────────────────────────────┘</pre>
+                    <div class="contact-block fade-row">
+                        <p class="contact-row">
+                            <span class="ct-prompt">&gt;</span>
+                            <a href="https://x.com/quroolarc" target="_blank" class="clink">x</a><span class="sep">/</span>
+                            <a href="https://discord.com/users/482984041167978509" target="_blank" class="clink">discord</a><span class="sep">/</span>
+                            <a href="https://t.me/quroolarc" target="_blank" class="clink">telegram</a><span class="sep">/</span>
+                            <a href="mailto:quroolofficial@gmail.com" class="clink">quroolofficial@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="cv-block fade-row">
+                        <div class="cv-row">
+                            <span class="cv-label">education:</span>
+                            <div class="cv-value">
+                                <p><strong>uafm</strong> ── bachelors degree</p>
+                                <p class="cv-dim">computer science and econometrics. gpa 9/10</p>
+                                <p><strong>phoenix company</strong> ── educational courses</p>
+                                <p class="cv-dim">community management and building. gpa 10/10</p>
+                            </div>
+                        </div>
+                        <pre class="cv-divider">├────────────────────────────────────────────┤</pre>
+                        <div class="cv-row">
+                            <span class="cv-label">languages:</span>
+                            <div class="cv-value cv-langs">
+                                <span><strong>en</strong> b2</span>
+                                <span><strong>ua</strong> native</span>
+                                <span><strong>ru</strong> c1</span>
+                                <span><strong>pl</strong> b2</span>
+                            </div>
+                        </div>
+                        <pre class="cv-divider">├────────────────────────────────────────────┤</pre>
+                        <div class="cv-row">
+                            <span class="cv-label">tools:</span>
+                            <div class="cv-value">
+                                <p><strong>google</strong> <span class="cv-dim">docs / excel / forms</span></p>
+                                <p><strong>notion</strong> <span class="cv-dim">pages / automation / databases</span></p>
+                                <p><strong>design</strong> <span class="cv-dim">canva / figma / procreate</span></p>
+                                <p><strong>ai</strong> <span class="cv-dim">chatgpt / claude / leonardo / recraft</span></p>
+                                <p><strong>discord</strong> <span class="cv-dim">server set-up / bots / roles</span></p>
+                                <p><strong>telegram</strong> <span class="cv-dim">chat &amp; channel set-up / bots / roles</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6 — products -->
+            <section class="sec" id="sec6" data-idx="6">
+                <div class="sec-inner">
+                    <pre class="ascii-header fade-row">┌──────────────────────────────────┐
+│  PRODUCTS  //  examples           │
+└──────────────────────────────────┘</pre>
+                    <div class="products-grid">
+                        <a href="https://magicblobs.xyz" target="_blank" class="product-card fade-row">
+                            <div class="product-img-wrap">
+                                <img src="../assets/magicblobs.png" alt="magicblob" class="product-img">
+                            </div>
+                            <p class="product-name">&gt; magicblob / click</p>
+                        </a>
+                        <a href="https://qurool.notion.site/Bulk-Trade-Community-Mediakit-295995f36a6e80cc9320df50237dd9c5?source=copy_link" target="_blank" class="product-card fade-row">
+                            <div class="product-img-wrap">
+                                <img src="../assets/mediakitbulk.png" alt="mediakit example" class="product-img">
+                            </div>
+                            <p class="product-name">&gt; mediakit example / click</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- ═══════════════ DETAIL MODAL ═══════════════ -->
+    <div id="detailModal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose">[ X ]</button>
+            <pre class="modal-header-art" id="modalHeaderArt"></pre>
+            <h3 class="modal-title"><span id="modalTitle"></span></h3>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
