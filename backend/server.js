@@ -55,6 +55,6 @@ http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': mime, 'Cache-Control': 'public, max-age=3600' });
         res.end(data);
     });
-}).listen(PORT, () =>
-    console.log(`\n  qurool's portfolio → http://localhost:${PORT}\n`)
+}).listen(PORT, '0.0.0.0', () =>
+    console.log(`\n  qurool's portfolio → http://0.0.0.0:${PORT}\n`)
 );
