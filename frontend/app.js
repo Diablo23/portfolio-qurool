@@ -418,7 +418,6 @@
         ionet: {
             title: 'io.net',
             body: '<p class="modal-text">├─ 1 year on lead position</p>'
-                + '<p class="modal-text">├─ full leadership of the RU community</p>'
                 + '<p class="modal-text">├─ assistance with UA management</p>'
                 + '<p class="modal-text">├─ monthly AMA sessions with team</p>'
         },
